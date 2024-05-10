@@ -1,4 +1,4 @@
-const root = "/WSOA3028A_2559739"
+const root = "/WSOA3028A_2572598"
 //const root = ""
 
 const menuItems = [
@@ -10,38 +10,18 @@ const menuItems = [
     {name:"Design", href: `${root}/design/Design.html`},
 ]
 
-export function initialise(currentPage)
-{
-    console.log("worked");
-    const h1 = document.querySelector("header > h1")
-    h1.innerText = document.title
+export function initialise(currentPage) {
     const nav = document.querySelector("header > nav")
     const ul = document.createElement("ul")
-
-    for (let menuItem of menuItems){
+    for (let menuItem of menuItems) {
         const li = document.createElement("li")
-        if (currentPage != menuItem.name)
-        {
+        if (currentPage != menuItem.name) {
             const a = document.createElement("a")
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
             li.appendChild(a)
-            
-        }
-        else
-        {
-            li.innerText = menuItem.name
-        }
-
+        } else { li.innerText = menuItem.name }
         ul.appendChild(li)
-        
     }
-
-    nav.appendChild(ul) 
-
+    nav.appendChild(ul)
 }
-
-
-
-//initialise();
-//    <script type="module" src="scripts/menu.js"></script>
