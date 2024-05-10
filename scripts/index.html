@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HomePage Demo">
+    <meta name="description" content="Ligudu's Website">
     <meta name="author" content="Ligudu Mashige">
     <title>Ligudu's HomePage</title>
+    <link rel="stylesheet" href="style.css">
     <script type="module"> import { initialise } from "./scripts/menu.js"
         initialise("Home") </script>
+
 </head>
 
 <body>
-    <header> <h1>Ligudu's Website</h1></header>
-    <nav>
-       <ul>
-            <a href="blog.html">Blog</a>
-            <a href="essays.html">Essays</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="profile.html">Profile</a>
-            <a href="design.html">Design</a>
+    <header> 
+        Ligudu's Website!
+        <nav>
+            <ul>
+                <a href="blogs/index.html">Blog</a>
+                <a href="designs/index.html">Designs</a>
+                <a href="portfolio/index.html">Portfolio</a>
+                <a href="Essays/index.html">Essays</a>
+            </ul>
+            <a href="blogs/index.html">Blog Home</a>
 
-            <p style="text-align: center;">Welcome to my Webpage! Scroll below for more information!</p>
-    <img src="images/Ligudu Cover Page.jpg" alt="Photo of myself in all white clothing" width="500" height="600">
-        </ul>
-    </nav>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Ligudu's Website</h1>
+        <p>Welcome to my Website!</p>
+        <img src="images/Ligudu Cover Page.jpg" alt="Photo of Ligudu Mashige"
+           title="Cover Page">
+    </main>
+    <footer>
+        <p>Ligudu's Web Powered by HIM!</p>
+    </footer>
 </body>
 
 </html>
