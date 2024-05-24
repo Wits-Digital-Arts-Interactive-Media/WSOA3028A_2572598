@@ -5,9 +5,10 @@ const menuItems = [
     {name:"Home", href: `${root}/index.html`},
     {name:"About", href: `${root}/portfolio/profile.html`},
     {name:"Portfolio", href: `${root}/portfolio/portfolio.html`},
-    {name:"Blog", href: `${root}/blogs/index.html`},
+    {name:"Blog", href: `${root}WSOA3028A_2572598/blogs/index.html`},
     {name:"Essays", href: `${root}/essays/index.html`},
     {name:"Design", href: `${root}/design/Design.html`},
+    
 ]
 
 export function initialise(currentPage) {
