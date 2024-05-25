@@ -3,8 +3,8 @@
     padding: 0;
 }
 body{
-    min-height: 50vh;
-    background-image: url(/images/Paint.jpg);
+    min-height: 100vh;
+    background-image: url(../WSOA3028A_2572598/images/Paint.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
