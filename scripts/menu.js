@@ -10,11 +10,11 @@ const menuItems = [
     {name:"Design", href: `${root}/designs/index.html`},
 ]
 
-const blogItems = [
+const blogPages = [
     {name: "week-1", href: root + "/blogs/week-1.html"},
     {name: "week-2", href: `${root}/blogs/week-2.html`},
     {name: "week-3", href: `${root}/blogs/week-3.html`},
-    {name: "week-4", href: `${root}/blogs/week-4.html`},
+    {name: "week-4", href: `${root}/blogs/week-4221q.html`},
 ];
 
 export function initialise(currentPage) {
