@@ -1,34 +1,28 @@
-const root = "/WSOA3028A_2572598"
-//const root = ""
+const root = "/WSOA3028A_2572598/"
 
 const menuItems = [
-    {name:"Home", href: `${root}/index.html`},
-    {name:"Profile", href: `${root}/profile/profile.html`},
-    {name:"Portfolio", href: `${root}/portfolio/portfolio.html`},
-    {name:"Blog", href: `${root}/blogs/blogs.html`},
-    {name:"Essays", href: `${root}/essays/index.html`},
-    {name:"Design", href: `${root}/designs/index.html`},
+    {name: "Blog", href: `${root}blogs/blogs.html`},
+    {name: "Designs", href: `${root}designs/index.html`},
+    {name: "Essays", href: `${root}essays/index.html`},
+    {name: "Portfolio", href: `${root}portfolio/portfolio.html`},
+    {name: "Profile", href: `${root}profile/profile.html`},
+    {name: "Home", href: `${root}index.html`},    
 ]
 
-const blogPages = [
-    {name: "week-1", href: root + "/blogs/week-1.html"},
-    {name: "week-2", href: `${root}/blogs/week-2.html`},
-    {name: "week-3", href: `${root}/blogs/week-3.html`},
-    {name: "week-4", href: `${root}/blogs/week-4221q.html`},
-];
-
-export function initialise(currentPage) {
-    const nav = document.querySelector("header > nav")
-    const ul = document.createElement("ul")
+export function initialize(currentPage) {
+    const nav = document.getElementById("navLinks")
     for (let menuItem of menuItems) {
-        const li = document.createElement("li")
+        const a = document.createElement("a")
         if (currentPage != menuItem.name) {
-            const a = document.createElement("a")
             a.innerText = menuItem.name
             a.setAttribute("href", menuItem.href)
-            li.appendChild(a)
-        } else { li.innerText = menuItem.name }
-        ul.appendChild(li)
+            a.setAttribute("id", "otherButton")
+            nav.appendChild(a)
+        }
+        else if (currentPage == menuItem.name) {
+            a.innerText = menuItem.name
+            a.setAttribute("id", "currentButton")
+            nav.appendChild(a)
+        }
     }
-    nav.appendChild(ul)
 }

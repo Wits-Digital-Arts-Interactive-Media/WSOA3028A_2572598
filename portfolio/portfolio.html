@@ -6,8 +6,12 @@
     <meta name="description" content="A demo website for the IM3 course">
     <meta name="author" content="Ligudu Mashige">
     <title>Ligudu's Portfolio</title>
-    <script type="module"> import { initialise } from "./scripts/menu.js"
-        initialise("Portfolio") </script>
+    <script type="module">
+      import { initialise } from "../scripts/menu.js";
+      initialise("Portfolio");
+  </script>
+  <script src="../scripts/menu.js" type="module"></script>
+    <script src = "../scripts/scroll-to-top.js"></script>
 
 </head>
 <nav>
@@ -87,6 +91,7 @@
           <h4>65cm x 95cm</h4>
           <p>A commissioned piece I did for my uncle. The works depict his mother, him and his sisters in their early childhood days. This piece is about family, the feeling of innocence within childhood.</p>
       </div>
+      <button onclick="scrollToTop()">Back to Top</button>
     </main>
 
 <footer>
