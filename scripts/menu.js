@@ -1,13 +1,24 @@
+const menuData = [
+    {title: 'Home', link: '/'},
+    {title: 'Blogs', link: '/blogs/blogs.html'},
+    {title: 'Designs', link: '/designs/index.html'},
+    {title: 'Essays', link: '/essays/essays.html'},
+    {title: 'Porfolio', link: '/portfolio/portfolio.html'},
+    {title: 'Profile', link: '/profile/profile.html'},
+];
+
 const initialiseMenu = () => {
     const nav = document.querySelector('nav');
     
     const ul = document.createElement('ul');
 
-    for(let item of ['Home', 'Blogs', 'Designs', 'Essays', 'Portfolio', 'Profile']) {
+    for (let item of menuItems) {
         const li = document.createElement('li');
-        li.innerText = item.text;
-
-        ul.appenChild(li);
+        const a = document.createElement('a');
+        a.innerText = item.title;
+        a.href = item.link;
+        li.appendChild(a);
+        ul.appendChild(li);
     }
 
     nav.appendChild(ul);
