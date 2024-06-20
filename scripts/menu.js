@@ -1,3 +1,20 @@
+const initialiseMenu = () => {
+    const nav = document.querySelector('nav');
+    
+    const ul = document.createElement('ul');
+
+    for(let item of ['Home', 'Blogs', 'Designs', 'Essays', 'Portfolio', 'Profile']) {
+        const li = document.createElement('li');
+        li.innerText = item.text;
+
+        ul.appenChild(li);
+    }
+
+    nav.appendChild(ul);
+};
+
+document.addEventListener('DOMContentLo aded', () => initialiseMenu());
+
 const root = "/WSOA3028A_2572598/"
 
 const menuItems = [
