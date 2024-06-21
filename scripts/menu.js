@@ -1,5 +1,5 @@
 const menuData = [
-    {title: 'Home', link: '/'},
+    {title: 'Home', link: '/index.html'},
     {title: 'Blogs', link: '/blogs/blogs.html'},
     {title: 'Designs', link: '/designs/index.html'},
     {title: 'Essays', link: '/essays/essays.html'},
