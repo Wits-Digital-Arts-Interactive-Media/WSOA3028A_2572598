@@ -5,27 +5,36 @@
     box-sizing: border-box;
 }
 
-body{
-    background: #080808;
-    color: #fff;
+::selection{
+    background-color: rgba(57, 56, 56, 0.8);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 } 
 
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./style-image/caravaggio.jpg);
-    background-size: cover;
-    background-position: center;
+   
 }
 
 .container{
-    padding: 10px 10%;
-}
-
-nav .logo a{
-    font-size: 35px;
-    font-weight: 500;
-    color: #fff;
+    padding: 2px 2%;
 }
 
 nav{
@@ -36,7 +45,7 @@ nav{
 }
 
 .logo{
-    width: 140px;
+    width: 150px;
 }
 
 nav ul li{
@@ -46,7 +55,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -67,19 +76,115 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
+.image-wrap{
+    position: absolute;
+    width: 85%;
+    max-width: 1000px;
+    height: 0px;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    background-image: url(../styles/style-image/caravaggio.jpg);
+    background-size: 150%;
+    background-position: 50% 58%;
+    background-repeat: no-repeat;
 }
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+
+.big-name{
+    position: relative;
+    z-index: 1;
+    margin-top: 250px;
+    position: relative;
+    z-index: 1;
+    color: #f3f0eb;
+    font-size: 4.5rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1;
 }
-.header-text h1 span{
+
+.big-name span{
     color: #ff004f;
 }
 
-#about{
-    padding: 80px 0;
-    color: #ababab;
+.bottom-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-section p{
+    color: #4f4e4e;
+    font-weight: 300;
+}
+
+.bottom-section p i{
+    color: #4f4e4e;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media a{
+    margin-left: 0.8rem;
+    font-size: 1.2rem;
+    color: #777;
+    transition: 0.4s;
+}
+
+.social-media a:hover{
+    color: #ff004f;
+}
+
+.scroll{
+    position: absolute;
+    color: #ff004f;
+    font-weight: 300;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    height: 50px;
+}
+
+.line{
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-image: linear-gradient(
+        to top, 
+    rgb(157, 167, 165), 
+    rgb(121, 124, 124)
+    );
+}
+
+.cursor-circle{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translate(calc(-50%), calc(-50%));
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.2px solid #ff004f;
+    z-index: 10;
+}
+
+.cursor-point{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 0px;
+    left: 0px;
+    transform: translate(calc(-50%), calc(-50%));
+    background-color: #ff004f;
+    z-index: 10;
+
 }
