@@ -25,6 +25,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 } 
 
 #header{
@@ -88,13 +89,13 @@ nav ul li a:hover::after{
     background-size: 150%;
     background-position: 50% 58%;
     background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 .big-name{
     position: relative;
     z-index: 1;
     margin-top: 250px;
-    position: relative;
     z-index: 1;
     color: #f3f0eb;
     font-size: 4.5rem;
@@ -110,7 +111,7 @@ nav ul li a:hover::after{
 .bottom-section{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 .bottom-section p{
@@ -163,7 +164,7 @@ nav ul li a:hover::after{
     );
 }
 
-.cursor-circle{
+/*.cursor-circle{
     position: fixed;
     top: 0px;
     left: 0px;
@@ -174,6 +175,9 @@ nav ul li a:hover::after{
     background-color: transparent;
     border: 0.2px solid #ff004f;
     z-index: 10;
+    opacity: 0;
+    transition-duration: 0.2s,  0.08s;
+    transition-property: opacity, transform;
 }
 
 .cursor-point{
@@ -186,5 +190,6 @@ nav ul li a:hover::after{
     transform: translate(calc(-50%), calc(-50%));
     background-color: #ff004f;
     z-index: 10;
-
-}
+    opacity: 0;
+    transition: 0.2s opacity;
+}*/
