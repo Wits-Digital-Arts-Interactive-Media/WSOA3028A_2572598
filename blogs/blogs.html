@@ -7,7 +7,9 @@
     <meta name="description" content="Blog Page One">
     <meta name="author" content="Ligudu Mashige">
     <title>Blogs</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/blog.css">
+    <!--<link rel="stylesheet" href="../styles/style.css">-->
     <script type="module">
         import { initialise } from "../scripts/menu.js";
         initialise("Blogs");
@@ -30,11 +32,21 @@
                     <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
                     <li><a href="../profile/profile.html">Profile</a></li>
                 </ul>   
-            </nav>
+            </nav> 
+            
+            <h1 class="home-title">My Blog Posts</h1>
+
+            <span class="home-content">Insight on my work throughout the semester</span>
         </div>
     </div>
-        <h1>Blog Posts</h1>
-        <article>
+ <!--<section class="home" id="home">
+    <div class="home-text container">
+        <h1 class="home-title">My Blog Posts</h1>
+        <span class="home-subtitle">Insight on my work throughout the semester</span>
+    </div>
+ </section>-->
+    <div>
+        <!--<article>
             <h2><a href="week-1.html">Blog Post Week One</a></h2>
             <p>This is my first blog page on the first week's semester work</p>
         </article>
@@ -49,33 +61,31 @@
         <article>
             <h2><a href="week-4.html">Blog Post Week 4</a></h2>
             <p>This is the third week's blog content</p>
-        </article>
+        </article>-->
+    </div>
 
     <div class="bottom-section hide">
-            <p>
-                <i class='bx bx-map'></i>Located in Johannesburg 
-            </p>
-            <ul class="social-media">
-                <li>
-                    <a href="#">
-                        <i class='bx bxl-instagram'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bxl-linkedin-square'></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class='bx bxl-github'></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <footer>
-            <p style="text-align: center; opacity: 0.5; margin-top: 20px;">Brought to you by | Ligoody2Shoes | © June 2024</p>
-        </footer>
-    </main>
+        <ul class="social-media">
+            <li>
+                <a href="https://www.instagram.com/ligudumashige">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/lmashige">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Wits-Digital-Arts-Interactive-Media/WSOA3028A_2572598.git">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p style="text-align: center; opacity: 0.5; margin-top: 20px;">Brought to you by | Ligoody2Shoes | © June 2024</p>
+    </footer>
+</main>
 </body>
 </html>

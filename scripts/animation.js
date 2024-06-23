@@ -10,8 +10,8 @@ timeline
   .to(
   ".image-wrap", 
   {
-    height: "550px",
-    backgroundSize: "105%",
+    height: "560px",
+    backgroundSize: "110%",
     duration: 2,
     ease: "power4.inOut",
   })
@@ -27,7 +27,7 @@ timeline
   .from(
     ".big-name", 
     {
-    y: getYDistance(".big-name"),
+    y: "1100px",
   }, 
   2
 )
