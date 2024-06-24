@@ -1,116 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A demo website for the IM3 course">
+    <meta name="description" content="Blog Page One">
     <meta name="author" content="Ligudu Mashige">
-    <title>Ligudu's Portfolio</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <title>Blogs</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/blog.css">
+    <!--<link rel="stylesheet" href="../styles/style.css">-->
     <script type="module">
-      import { initialize } from "../scripts/menu.js";
-      initialize("Portfolio");
+        import { initialise } from "../scripts/menu.js";
+        initialise("Portfolio");
     </script>
-  <script src="../scripts/menu.js" type="module"></script>
-  <script src = "../scripts/scroll-to-top.js"></script>
-
+    <script type="module" src="../scripts/menu.js"></script>
+    <script src="../scripts/scroll-to-top.js"></script>
 </head>
+
 <body>
-  <div id="header">
-    <div class="container">
-        <nav class="hide">
-            <img src="../styles/style-image/logo.png" class="logo">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../blogs/blogs.html">Blogs</a></li>
-                <li><a href="../designs/index.html">Designs</a></li>
-                <li><a href="../essays/index.html">Essays</a></li>
-                <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
-                <li><a href="../profile/profile.html">Profile</a></li>
-            </ul>   
-        </nav>
+  <main>
+    <div id="header">
+        <div class="container">
+            <nav class="hide">
+                <img src="../styles/style-image/logo.png" class="logo">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../blogs/blogs.html">Blogs</a></li>
+                    <li><a href="../designs/index.html">Designs</a></li>
+                    <li><a href="../essays/essays.html">Essays</a></li>
+                    <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+                    <li><a href="../profile/profile.html">Profile</a></li>
+                </ul>   
+            </nav> 
+            
+            <div class="blog-text container">
+                <h1 class="blog-title">My Portfolio</h1>
+                <span class="blog-subtitle">My Artworks</span>
+            </div>
+            <section class="post container">
+                <!--Post Box 1-->
+                <div class="post-box">
+                    <img src="../portfolio/portfolio-images/Conversations with Myself.JPG" alt="Image of Content Title" class="post-img">
+                    <h2 class="category">Conversations with Myself c.2023</h2>
+                    <a href="#" class="post-title">
+                        by Ligudu Mashige
+                    </a>
+                    <span class="post-date">Acrylic, Spray Paint and Oil on Canvas</span>
+                    <p class="post-description">This is a portfolio piece that I did as another experiment of art styles inspired by Jean-Michel  Basquiat and George Condo. It is a portfolio piece that will be exhibited and sold after the exhibition</p>
+
+                </div>
+                <!--Post Box 2-->
+                <div class="post-box">
+                    <img src="../portfolio/portfolio-images/Creep.jpg" alt="Image of Content Title" class="post-img">
+                    <h2 class="category">CREEP c.2024</h2>
+                    <a href="#" class="post-title">
+                        by Ligudu Mashige
+                    </a>
+                    <span class="post-date">Acrylic and Oil Paint on Canvas</span>
+                    <p class="post-description">This is a portfolio piece that I plan exhibit one day. This piece is inspired by a combination of my favourite modern artists whilst exploring exaggerated aniamtion and cartoon styles and features.</p> 
+                </div>
+                <!--Post Box 3-->
+                <div class="post-box">
+                    <img src="../portfolio/portfolio-images/Find Your Wings.jpg" alt="Image of Content Title" class="post-img">
+                    <h2 class="category">Find Your Wings c.2022</h2>
+                    <a href="#" class="post-title">
+                        by Ligudu Mashige
+                    </a>
+                    <span class="post-date">Acrylic and Oil Paint on Canvas</span>
+                    <p class="post-description">A piece that resonates with me so much. Inspired by George Condo, I wanted to explore cubism and the mix of different colours and shapes. The work depicts a man split between him, trying to find the balance within his insanity. The wings represent him finding inner peace even throughout the chaos that lives in his head.</p>   
+                </div>
+                <!--Post Box 4-->
+                <div class="post-box">
+                    <img src="../portfolio/portfolio-images/Grey October.JPG" alt="Image of Content Title" class="post-img">
+                    <h2 class="category">Grey October c.2022</h2>
+                    <a href="#" class="post-title">
+                        Week Four
+                    </a>
+                    <span class="post-date">Oil and Acrylic on Fabriano</span>
+                    <p class="post-description">First time I have really explored abstract style. This is a commissioned piece I did for my uncle. I had much time exploring during October trying to figure out what to express. October was a difficult month of frustration and self doubt. I thought the name would be fitting considering the dull and hopeless feeling October felt for me. Throughout this dark storm, there is a sense of calmness and peace that remains within.</p>
+                </div>
+                <!--Post Box 5-->
+                <div class="post-box">
+                    <img src="../portfolio/portfolio-images/Kentality.JPG" alt="Image of Content Title" class="post-img">
+                    <h2 class="category">Kentality c.2023</h2>
+                    <a href="#" class="post-title">
+                        by Ligudu Mashige
+                    </a>
+                    <span class="post-date">Digital artwork made with Krita</span>
+                    <p class="post-description">I was fortunate with handling this artwork as an ablum cover for my friend. The concept is based on beauty within darkness in which he wanted me to encapsulate the idea of breaking free and expressing yourself within phases of darkness.</p>
+                </div>
+                <!--Post Box 6-->
+                <div class="post-box">
+                    <img src="../portfolio/portfolio-images/Kings Dead.JPG" alt="Image of Content Title" class="post-img">
+                    <h2 class="category">Kings Dead c.2021</h2>
+                    <a href="#" class="post-title">
+                        by Ligudu Mashige
+                    </a>
+                    <span class="post-date">Acrylic and Oil on Canvas</span>
+                    <p class="post-description">This piece is based on the civil unrest that happened in July 2021 in Durban. The man with the crown represents former president Jacob Zuma as “the king” who was recognised as a powerful influential political figure for many of those, however, the people were sold false promises and are still unhappy. This piece represents more than just the conflict of that time. It represents the chaos and destruction that this country has suffered and yet more that is yet to come whilst we are still labelled as the rainbow nation. Nothing very colourful in our lives remains.</p>
+                </div>
+                <!--Post Box 7-->
+                <div class="post-box">
+                    <img src="../portfolio/portfolio-images/Sounds of Africa.JPG" alt="Image of Content Title" class="post-img">
+                    <h2 class="category">Sounds of Africa c.2021</h2>
+                    <a href="#" class="post-title">
+                        by Ligudu Mashige
+                    </a>
+                    <span class="post-date">Acrylic on Canvas</span>
+                    <p class="post-description">This was a commissioned pieces for a friend of mine who makes music specializing in AfroHouse and AfroTech. He wanted something that resonates with house as a genre and how the sounds express what it means to be African. I spent a lot of time looking at historical African caveman art markings and different patterns of clothing from different South African tribes to understand and try to mix the rhythm of music with art.</p>
+                </div>
+                <!--Post Box 8-->
+                <div class="post-box">
+                    <img src="../portfolio/portfolio-images/Usapho.jpg" alt="Image of Content Title" class="post-img">
+                    <h2 class="category">Umanyano Losapho</h2>
+                    <a href="#" class="post-title">
+                        by Ligudu Mashige
+                    </a>
+                    <span class="post-date">Acrylic and Watercolour on Fabriano Paper</span>
+                    <p class="post-description">A commissioned piece I did for my uncle. The works depict his mother, him and his sisters in their early childhood days. This piece is about family, the feeling of innocence within childhood.</p>
+                </div>
+                
+            
+            </section>
+            
+        </div>
     </div>
-</div>
-    <header><h1 style="text-align: center;">Portfolio Page</h1></header>
-   
-    <main>
-      <u><h2>My Virtual Gallery</h2></u>
-      <ul>
-        <li>Commissioned Artworks and Portfolio Pieces</li>
-        <li>Animation Artworks and Drawings</li>
-        <li>Upcoming Projects</li>
-      </ul>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Conversations with Myself.JPG" width="600" height="300" alt="Red Commissioned Painting">
-          <h3>Conversations with Myself (2023)</h3>
-          <h4>Acrylic, Spray Paint & Oil Pastel on Fabriano Paper</h4>
-          <h4>80cm x 150cm</h4>
-          <p>This is a portfolio piece that I did as another experiment of art styles inspired by Jean-Michel  Basquiat and George Condo. It is a portfolio piece that will be exhibited and sold after the exhibition.</p>
-        </div>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Creep.jpg" width="400" height="400"  alt="Creep Painting">
-          <h3>CREEP (2024)</h3>
-          <h4>Acrylic & Oil Paint on Canvas</h4>
-          <h4>40cm x 40cm</h4>
-          <p>This is a portfolio piece that I plan exhibit one day. This piece is inspired by a combination of my favourite modern artists whilst exploring exaggerated aniamtion and cartoon styles and features.</p>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Find Your Wings.jpg" width="450" height="500" alt="Cubism and Abstract Painting">
-          <h3> FIND YOUR WINGS (2022)</h3>
-          <h4>Acrylic & Oil Paint on Canvas</h4>
-          <h4>45cm x 60cm</h4>
-          <p>A piece that resonates with me so much. Inspired by George Condo, I wanted to explore cubism and the mix of different colours and shapes. The work depicts a man split between him, trying to find the balance within his insanity. The wings represent him finding inner peace even throughout the chaos that lives in his head.</p>
-        </div>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Grey October.JPG" width="600" height="350" alt="Grey Abstract Painting">
-          <h3>Grey October(2022)</h3>
-          <h4>Acrylic, Oil and Spray Paint on Fabriano Paper</h4>
-          <h4>150cm x 80cm</h4>
-          <p>First time I have really explored abstract style. This is a commissioned piece I did for my uncle. I had much time exploring during October trying to figure out what to express. October was a difficult month of frustration and self doubt. I thought the name would be fitting considering the dull and hopeless feeling October felt for me. Throughout this dark storm, there is a sense of calmness and peace that remains within.</p>
-        </div>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Kentality.JPG" width="550" height="380" alt="Digital Artwork">
-          <h3>KENTALITY (2023)</h3>
-          <h4>Digital Artwork Made with Krita</h4>
-          <p>I was fortunate with handling this artwork as an ablum con=ver for my friend. The concept is based on beauty within darkness in which he wanted me to encapsulate the idea of breaking free and expressing yourself within phases of darkness.</p>
-        </div>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Kings Dead.JPG" width="450" height="550" alt="Abstract Painting of a Man">
-          <h3>Kings Dead (2021)</h3>
-          <h3>Acrylic & Oil on Canvas</h3>
-          <h4>30cm x 45cm</h4>
-          <p>This piece is based on the civil unrest that happened in July 2021 in Durban. The man with the crown represents former president Jacob Zuma as “the king” who was recognised as a powerful influential political figure for many of those, however, the people were sold false promises and are still unhappy. This piece represents more than just the conflict of that time. It represents the chaos and destruction that this country has suffered and yet more that is yet to come whilst we are still labelled as the rainbow nation. Nothing very colourful in our lives remains.</p>
-        </div>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Self Portrait In Three Colours.jpg" width="450" height="550" alt="Experimental Abstract Art">
-          <h3>Self Portrait In Three Colours (2023)</h3>
-          <h3>Acrylic & Oil on Canvas</h3>
-          <h4>100cm x 100cm</h4>
-          <p>This is an experiment art piece I did where I was learning about expressing myself using certain colour and how to mix those colours accordingly on the canvas. The title is inspired by Charles Mingus.</p>
-        </div>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Sounds of Africa.JPG" width="440" height="550" alt="African Cave Inspired Art">
-          <h3>Sounds of Africa (2021)</h3>
-          <h3>Acrylic & Oil on Canvas</h3>
-          <h4>70cm x 140cm</h4>
-          <p>This was a commissioned pieces for a friend of mine who makes music specializing in AfroHouse and AfroTech. He wanted something that resonates with house as a genre and how the sounds express what it means to be African. I spent a lot of time looking at historical African caveman art markings and different patterns of clothing from different South African tribes to understand and try to mix the rhythm of music with art.</p>
-        </div>
-        <div class="block">
-          <img src="../portfolio/portfolio-images/Usapho.jpg" width="600" height="300" alt="5 Family Members">
-          <h3>Umanyano Losapho (2023)</h3>
-          <h3>Acrylic & Watercolour on Canvas</h3>
-          <h4>65cm x 95cm</h4>
-          <p>A commissioned piece I did for my uncle. The works depict his mother, him and his sisters in their early childhood days. This piece is about family, the feeling of innocence within childhood.</p>
-      </div>
-      <button onclick="scrollToTop()">Back to Top</button>
-    </main>
+ <!--<section class="home" id="home">
+    <div class="home-text container">
+        <h1 class="home-title">My Blog Posts</h1>
+        <span class="home-subtitle">Insight on my work throughout the semester</span>
+    </div>
+ </section>-->
+    <div>
+        <!--<article>
+            <h2><a href="week-1.html">Blog Post Week One</a></h2>
+            <p>This is my first blog page on the first week's semester work</p>
+        </article>
+        <article>
+            <h2><a href="week-2.html">Blog Post Week 2</a></h2>
+            <p>Week two's work and content</p>
+        </article>
+        <article>
+            <h2><a href="week-3.html">Blog Post Week 3</a></h2>
+            <p>This is the third week's blog content</p>
+        </article>
+        <article>
+            <h2><a href="week-4.html">Blog Post Week 4</a></h2>
+            <p>This is the third week's blog content</p>
+        </article>-->
+    </div>
 
-<footer>
-  <div class="social-icons">
-    <a href="https://www.instagram.com/ligudumashige"><img src="../profile/profile-images/instagram.png" width="30" height="30"  alt="Instagram">Instagram</a>
-    <a href="https://www.linkedin.com/in/lmashige"><img src="../profile/profile-images/linkedin.png" width="30" height="0" alt="LinkedIn">LinkedIn</a>
-  </div>
-  <p style="text-align: center; opacity: 0.5; margin-top: 20px;">Brought to you by | Ligoody2Shoes | © June 2024</p>
-</footer>
-
+    <div class="bottom-section hide">
+        <ul class="social-media">
+            <li>
+                <a href="https://www.instagram.com/ligudumashige">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/lmashige">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Wits-Digital-Arts-Interactive-Media/WSOA3028A_2572598.git">
+                    <i class='bx bxl-github'></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <p style="text-align: center; opacity: 0.5; margin-top: 20px;">Brought to you by | Ligoody2Shoes | © June 2024</p>
+    </footer>
+</main>
 </body>
 </html>

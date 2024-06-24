@@ -4,11 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Week Two Blog Post">
+    <meta name="description" content="Blog Page One">
     <meta name="author" content="Ligudu Mashige">
-    <title>Week Two Blog Post</title>
-    <script type="module" src="scripts/menu.js"></script>
-    <script src = "../scripts/scroll-to-top.js"></script>
+    <title>Week One Blog</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/blog.css">
+    <!--<link rel="stylesheet" href="../styles/style.css">-->
+    <script type="module">
+        import { initialise } from "../scripts/menu.js";
+        initialise("Blogs");
+    </script>
+    <script type="module" src="../scripts/menu.js"></script>
+    <script src="../scripts/scroll-to-top.js"></script>
 </head>
 
 <body>
@@ -20,7 +27,7 @@
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../blogs/blogs.html">Blogs</a></li>
                     <li><a href="../designs/index.html">Designs</a></li>
-                    <li><a href="../essays/index.html">Essays</a></li>
+                    <li><a href="../essays/essays.html">Essays</a></li>
                     <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
                     <li><a href="../profile/profile.html">Profile</a></li>
                 </ul>   
